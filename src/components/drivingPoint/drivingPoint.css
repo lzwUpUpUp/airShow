@@ -1,0 +1,389 @@
+.container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.top {
+  width: 100%;
+  height: 8%;
+}
+
+.main {
+  width: 100%;
+  height: 92%;
+  /* background: rgb(215, 231, 69); */
+}
+
+/* 主要部分上半部分 */
+
+.upper-part {
+  width: 100%;
+  height: 68%;
+  box-sizing: border-box;
+  padding: 0.4% 1.2%;
+  display: flex;
+  /* space-between为左右两端对齐，即左右两侧项目都紧贴容器，且项目之间间距相等*/
+  justify-content: space-between;
+}
+
+.upper-part-left {
+  width: 26.5%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-content: space-between; */
+  justify-content: space-between;
+}
+
+/* 信息报送 */
+
+.information-submitted {
+  width: 100%;
+  height: 49%;
+  background-image: url("../../assets/img/information2.png");
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.information-submitted ul li {
+  display: flex;
+  justify-content: space-around;
+  color: #83b1f1;
+  height: 32px;
+}
+
+.information-submitted ul li span {
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+}
+
+/* 人数信息 */
+
+.number-ofpeople {
+  width: 100%;
+  height: 49%;
+  background-image: url("../../assets/img/peopleNumber2.png");
+  background-size: 100% 100%;
+  position: relative;
+}
+
+#selectPoint {
+  /* width: 100%;
+    height: 100%; */
+  background-color: rgba(250, 0, 0, 0);
+  color: #eea150;
+  /* 去掉三角 */
+  /* appearance: none;
+    -moz-appearance: none; 
+    -webkit-appearance: none;  */
+  /* 去掉边框 */
+  border: 0;
+  display: block;
+  /* 去掉聚焦时边框 */
+  outline: none;
+  width: 120px;
+  overflow: hidden;
+  white-sapce: nowrap;
+  text-overflow: ellipsis;
+}
+
+#selectPoint option {
+  /* background-color: #27478a00; */
+  background: #27478a;
+  width: 120px;
+}
+
+.number-ofpeople-title {
+  height: 10%;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+  align-items: center;
+}
+
+#peopleDetail {
+  width: 100%;
+  height: 90%;
+  /* background: pink; */
+}
+
+/* 地图部分 */
+
+.upper-part-middle {
+  width: 46.5%;
+  height: 100%;
+  background-image: url("../../assets/img/mapBack2.png");
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.mapBox {
+  width: 98.2%;
+  height: 86%;
+  position: absolute;
+  bottom: 1.8%;
+  left: 0.8%;
+  /* position: relative; */
+}
+
+#selectZone {
+  width: 100px;
+  height: 32px;
+  background-image: url('../../assets/img/mapProLeft.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-color: #000a76;
+  border: 0;
+  color: #eea150;
+  display: block;
+  /* 去掉聚焦时边框 */
+  outline: none;
+  width: 120px;
+  overflow: hidden;
+  white-sapce: nowrap;
+  text-overflow: ellipsis;
+  position: absolute;
+  top: 2.6%;
+  right: 130px;
+  z-index: 1000;
+  padding: 4px;
+}
+
+#selectZone option {
+  background-color: #001977;
+  border: none;
+}
+
+.mapProRight {
+  width: 120px;
+  background-image: url('../../assets/img/mapProRight.png');
+  background-size: 100% 100%;
+  position: absolute;
+  top: 2%;
+  right: 8px;
+  z-index: 1000;
+  box-sizing: border-box;
+  padding: 8px;
+}
+
+.mapProRight li {
+  list-style: none;
+  width: 86%;
+  border-bottom: 1px solid RGBA(0, 113, 216, 0.8);
+  height: 26px;
+  line-height: 26px;
+  font-size: 12px;
+  color: #e7e7e7;
+  cursor: pointer;
+  margin-left: 6%;
+  letter-spacing: 1;
+  font-weight: 900;
+  text-align: left;
+  padding-left: 4px;
+}
+
+.mapProRight li:hover {
+  background-color: #4e8fe9;
+}
+
+.mapProRight li img {
+  width: 16px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.mapProRight li:nth-child(1) {
+  color: #eea150;
+}
+
+.mapProRight li:nth-child(7) {
+  border-bottom: none
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+.amap-logo {
+  display: none !important;
+}
+
+.amap-copyright {
+  display: none !important;
+}
+
+.upper-part-right {
+  width: 26.5%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-content: space-between; */
+  justify-content: space-between;
+}
+
+.shuttle-bus {
+  width: 100%;
+  height: 49%;
+  background-image: url("../../assets/img/bus2.png");
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.vehicle-data {
+  width: 100%;
+  height: 49%;
+  background-image: url("../../assets/img/vehicleDdata2.png");
+  background-size: 100% 100%;
+  position: relative;
+}
+
+/* 主要部分下半部分 */
+
+.half-bottom {
+  width: 100%;
+  height: 32%;
+  box-sizing: border-box;
+  padding: 0.4% 1.2%;
+  display: flex;
+  /* space-between为左右两端对齐，即左右两侧项目都紧贴容器，且项目之间间距相等*/
+  justify-content: space-between;
+}
+
+.half-bottom-left {
+  width: 49.8%;
+  height: 100%;
+  background-image: url("../../assets/img/predict2.png");
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.half-bottom-left .predict-title {
+  color: #FCBE00;
+  font-family: NotoSansHans-Regular;
+  font-size: 16px;
+  letter-spacing: 1px;
+  height: 10%;
+}
+
+.tableBox {
+  width: 100%;
+  height: 90%;
+  padding: 8px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.half-bottom-left table {
+  color: #25B5FF;
+  font-family: NotoSansHans-Regular;
+  background-color: rgba(86, 177, 255, 0.2);
+  border-collapse: collapse;
+  font-size: 12px;
+  font-weight: 100;
+
+}
+#table-hightLight{
+  /* box-shadow: 0px -10px 6px  rgba(86, 177, 255, 1) inset; */
+  -webkit-box-shadow: 0 -10px 6px -4px rgba(86, 177, 255, 1) inset;
+}
+.half-bottom-left #first-Table {
+  width: 38%;
+  height: 100%;
+}
+
+.half-bottom-left #second-Table {
+  width: 44%;
+  height: 100%;
+}
+
+.half-bottom-left #third-Table {
+  width: 16%;
+  height: 100%;
+  
+}
+/* 第一个表格 */
+.half-bottom-left #first-Table thead tr th {
+  border-bottom: 1px solid rgba(1, 142, 214, 0.4);
+  border-right: 1px solid rgba(1, 142, 214, 0.4);
+  padding: 4px 0 4px 0;
+}
+.half-bottom-left #first-Table thead tr th:nth-child(6){
+  border-right: none;
+}
+.half-bottom-left #first-Table tbody td{
+  width: 16.5%;
+  border-right: 1px solid rgba(1, 142, 214, 0.4);
+  padding: 4px;
+}
+.half-bottom-left #first-Table tbody tr:nth-child(1){
+  border-bottom: 1px solid rgba(1, 142, 214, 0.4);
+}
+.half-bottom-left #first-Table tbody tr td:nth-child(6){
+  border-right: none;
+}
+  
+
+/* 第二个表格 */
+.half-bottom-left #second-Table thead tr th {
+  border-bottom: 1px solid rgba(1, 142, 214, 0.4);
+  border-right: 1px solid rgba(1, 142, 214, 0.4);
+  line-height: 40px;
+}
+.half-bottom-left #second-Table thead tr th:nth-child(7){
+  border-right: none;
+}
+.half-bottom-left #second-Table tbody td{
+  border-right: 1px solid rgba(1, 142, 214, 0.4);
+}
+.half-bottom-left #second-Table tbody tr:nth-child(1){
+  border-bottom: 1px solid rgba(1, 142, 214, 0.4);
+}
+.half-bottom-left #second-Table tbody tr td:nth-child(7){
+  border-right: none;
+}
+
+/* 第三个表格 */
+.half-bottom-left #third-Table thead tr th {
+  border-bottom: 1px solid rgba(1, 142, 214, 0.4);
+  border-right: 1px solid rgba(1, 142, 214, 0.4);
+  line-height: 40px;
+}
+.half-bottom-left #third-Table thead tr th:nth-child(3){
+  border-right: none;
+}
+.half-bottom-left #third-Table tbody td{
+  border-right: 1px solid rgba(1, 142, 214, 0.4);
+}
+.half-bottom-left #third-Table tbody tr:nth-child(1){
+  border-bottom: 1px solid rgba(1, 142, 214, 0.4);
+}
+.half-bottom-left #third-Tabletbody tr td:nth-child(3){
+  border-right: none;
+}
+
+
+
+
+
+.half-bottom-right {
+  width: 49.8%;
+  height: 100%;
+  background-image: url("../../assets/img/compare2.png");
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.detail-box {
+  width: 96.8%;
+  height: 81.4%;
+  position: absolute;
+  bottom: 3%;
+  left: 1.6%;
+  /* stop-color: #eea150; */
+  overflow: hidden;
+}
